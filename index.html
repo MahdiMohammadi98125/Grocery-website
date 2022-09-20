@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script src="js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!-- `HEADER SECTION START -->
+    <header class="grocery-header">
+      <div class="top-part-header">
+        <a href="#" class="logo">
+          <img src="images/shopping-basket-32.gif" alt="shopping basket" />
+          freshy
+        </a>
+
+        <form class="header-form">
+          <input
+            type="text"
+            class="header-search"
+            placeholder="search here..."
+          />
+          <button class="search-btn">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          </button>
+        </form>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MAIN NAVIGATION SECTION START -->
+    <nav class="grocery-main-nav">
+      <div class="bottom-part-header container">
+        <div id="menu-bar" class="fas fa-bars">
+          <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        </div>
+        <ul class="main-nav-links">
+          <li><a href="#" class="main-nav-link">Home</a></li>
+          <li><a href="#catogory" class="main-nav-link">Catogory</a></li>
+          <li><a href="#product" class="main-nav-link">Product</a></li>
+          <li><a href="#deal" class="main-nav-link">Deal</a></li>
+          <li><a href="#contact" class="main-nav-link">Contact</a></li>
+        </ul>
+
+        <ul class="main-nav-icons">
+          <li>
+            <a href="#">
+              <ion-icon name="cart" class="main-nav-icon"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <ion-icon name="heart" class="main-nav-icon"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <ion-icon class="main-nav-icon" name="person-circle"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN NAVIGATION SECTION ENDED -->
+
+    <!-- HERO SECTION STARTED -->
+    <main>
+      <section class="hero-section">
+        <div class="container hero-split">
+          <div class="hero-img-box">
+            <img
+              src="images/home-img.png"
+              alt="A nice beautiful sited 
+            vegetables"
+              class="hero-img"
+            />
+          </div>
+
+          <div class="hero-text-box">
+            <p>Fresh and Organic</p>
+            <h1>
+              Your Daily Need <br />
+              Products
+            </h1>
+            <button class="hero-btn">Get Started</button>
+          </div>
+        </div>
+      </section>
+      <!--HERO SECTION ENDED-->
+
+      <!-- BANNER SECTION STARTED -->
+      <section class="banner-container container">
+        <div class="banner">
+          <img src="./images/banner-1.jpg" alt="banner-1" />
+          <div class="content">
+            <h3>special offer</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">check out</a>
+          </div>
+        </div>
+        <div class="banner">
+          <img src="./images/banner-2.jpg" alt="banner-2" />
+          <div class="content">
+            <h3>limited offer</h3>
+            <p>upto 50% off</p>
+            <a href="#" class="btn">check out</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BANNER OFFER ENDED -->
+
+      <!-- SHOP SECTION STARTED -->
+      <section class="shop-section" id="catogory">
+        <h2 class="shop-section-heading">SHOP BY <span>CATOGORY</span></h2>
+        <div class="shop-section-parts container">
+          <div class="shop-section-part">
+            <h2>Vegetables</h2>
+            <p>Up to 50% Off</p>
+            <img src="images/category-1.png" alt="some fruit" />
+            <a href="#" class="shop-section-btn">Shop Now</a>
+          </div>
+
+          <div class="shop-section-part">
+            <h2>Juice</h2>
+            <p>Up to 44% Off</p>
+            <img src="images/category-2.png" alt="some fruit" />
+            <a href="#" class="shop-section-btn">Shop Now</a>
+          </div>
+
+          <div class="shop-section-part">
+            <h2>Meat</h2>
+            <p>Up to 34% Off</p>
+            <img src="images/category-3.png" alt="some fruit" />
+            <a href="#" class="shop-section-btn">Shop Now</a>
+          </div>
+
+          <div class="shop-section-part">
+            <h2>Fruits</h2>
+            <p>Up to 12% Off</p>
+            <img src="images/category-4.png" alt="some fruit" />
+            <a href="#" class="shop-section-btn">Shop Now</a>
+          </div>
+        </div>
+      </section>
+      <!-- SHOP SECTION ENDED -->
+
+      <!-- LATEST SECTION STARTED -->
+      <section class="latest-section" id="product">
+        <h3 class="latest-heading">LATEST <span>PRODUCTS</span></h3>
+        <div class="latest-products container">
+          <div class="latest-product">
+            <span class="latest-label">-33%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img src="images/product-1.png" alt="banana image" />
+            </div>
+
+            <h3>Organic Banana</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+
+          <div class="latest-product">
+            <span class="latest-label">-45%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img src="images/product-2.png" alt="banana image" />
+            </div>
+
+            <h3>Organic Tomato</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+
+          <div class="latest-product">
+            <span class="latest-label">-50%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img src="images/product-6.png" alt="banana image" />
+            </div>
+
+            <h3>Organic Almonts</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+
+          <div class="latest-product">
+            <span class="latest-label">-60%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img src="images/product-4.png" alt="banana image" />
+            </div>
+
+            <h3>Organic Milks</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+
+          <div class="latest-product">
+            <span class="latest-label">-65%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img src="images/product-5.png" alt="banana image" />
+            </div>
+
+            <h3>Organic Banana</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+
+          <div class="latest-product">
+            <span class="latest-label">-70%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img src="images/product-6.png" alt="banana image" />
+            </div>
+
+            <h3>Organic Almonts</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+
+          <div class="latest-product">
+            <span class="latest-label">-80%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img src="images/product-7.png" alt="banana image" />
+            </div>
+
+            <h3>Organic Apple</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+
+          <div class="latest-product">
+            <span class="latest-label">-40%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img src="images/product-8.png" alt="banana image" />
+            </div>
+
+            <h3>Organic Cheese</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+
+          <div class="latest-product">
+            <span class="latest-label">-30%</span>
+            <div class="latest-icons">
+              <ion-icon class="latest-icon" name="heart-outline"></ion-icon>
+              <ion-icon class="latest-icon" name="eye-outline"></ion-icon>
+              <ion-icon
+                class="latest-icon"
+                name="return-down-forward-outline"
+              ></ion-icon>
+            </div>
+
+            <div class="latest-img">
+              <img
+                src="images/product-9.png"
+                alt="banana image"
+                style="margin-top: -35px"
+              />
+            </div>
+
+            <h3>Organic Carrot</h3>
+            <div class="latest-rate-icons">
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+              <ion-icon class="latest-rate-icon" name="star-outline"></ion-icon>
+            </div>
+
+            <p class="latest-price">$10.50 <span>$13.20</span></p>
+            <div>
+              <label for="latest-amount">Quantity</label>
+              <input
+                type="number"
+                value="1"
+                class="latest-amount"
+                id="latest-amount"
+              />
+              <span class="weight">/kg</span>
+            </div>
+            <a href="#" class="latest-btn">Add to Cart</a>
+          </div>
+        </div>
+      </section>
+      <!-- LATEST SECTION ENDED -->
+
+      <!-- CALL TO ACTION SECTION STARTED -->
+      <section class="cta-section container" id="deal">
+        <h4>CONTACT <span>US</span></h4>
+        <form class="cta-form">
+          <div class="inputs">
+            <input type="text" class="input" placeholder="name" />
+            <input type="email" class="input" placeholder="email" />
+            <input type="number" class="input" placeholder="number" />
+            <input type="subject" class="input" placeholder="subject" />
+          </div>
+          <textarea
+            resize="none"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="message"
+          ></textarea>
+          <input type="submit" value="Send Message" id="sm-btn" />
+        </form>
+      </section>
+      <!-- CALL TO ACTION SECTION ENDED -->
+
+      <!-- SUBSCRIBE SECTION STARTED-->
+      <section class="subscribe-section">
+        <h3>subscribe us for the latest updates</h3>
+        <div class="subscribe-center">
+          <form class="subscribe-form">
+            <input
+              type="email"
+              id="subscribe-email"
+              placeholder="enter your email"
+            />
+            <input type="submit" value="Subscribe" id="subscribe-btn" />
+          </form>
+        </div>
+      </section>
+      <!-- SUBSCRIBE SECTION ENDED-->
+    </main>
+
+    <!-- FOOTER SECTION STARTED -->
+    <footer class="footer-section" id="contact">
+      <div class="footer-row container">
+        <div class="footer-col--1">
+          <a href="#" class="logo">
+            <img src="images/shopping-basket-32.gif" alt="shopping basket" />
+            freshy
+          </a>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ut
+            reprehenderit reiciendis corporis, doloremque optio delectus esse
+            vitae ad iusto enim natus. Eos laborum accusantium laboriosam
+            voluptatem illo quo nisi.
+          </p>
+          <ul class="social-nav-icons">
+            <li>
+              <a class="footer-link social-link" href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link social-link" href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link social-link" href="#">
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col--2">
+          <h4>Our Location</h4>
+          <ul class="location-links">
+            <li><a href="#" class="footer-link">Afghanistan</a></li>
+            <li><a href="#" class="footer-link">Iran</a></li>
+            <li><a href="#" class="footer-link">Tajikestan</a></li>
+            <li><a href="#" class="footer-link">Arabistan</a></li>
+            <li><a href="#" class="footer-link">France</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col--3">
+          <h4>Quick Links</h4>
+          <ul class="quick-links">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">Catogory</a></li>
+            <li><a href="#" class="footer-link">Product</a></li>
+            <li><a href="#" class="footer-link">Deal</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col--4">
+          <h4>Download App</h4>
+          <ul class="download-apps">
+            <li><a href="#" class="footer-link">Google Play</a></li>
+            <li><a href="#" class="footer-link">Windows Xp</a></li>
+            <li><a href="#" class="footer-link">App Store</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <hr width="100%" color="#ddd" />
+      </div>
+
+      <div class="author">
+        <p class="author-name">
+          Created By <span>Mahdi</span> | All Rights Reserved!
+        </p>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION ENDED -->
+  </body>
+</html>
